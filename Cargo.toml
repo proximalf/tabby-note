@@ -1,6 +1,21 @@
 [package]
-name = "takenote-rust"
+name = "tabby-note"
 version = "0.1.0"
 edition = "2021"
+authors = ["proximalf"]
+description = "A simple terminal note taking app."
+readme = "readme.md"
+repository = "https://github.com/proximalf/tabby-note"
+license = "MIT"
 
 [dependencies]
+chrono = { version = "0.4.39", features = ["serde"] }
+clap = { version = "4.5.23", features = ["cargo", "color", "derive"] }
+clap_complete = "4.5.42"
+config = "0.15.4"
+dirs = "5.0.1"
+minijinja = { version = "2.5.0", features = ["loader"] }
+minijinja-contrib = { version = "2.5.0", features = ["datetime"] }
+serde = { version = "1.0.217", features = ["serde_derive"] }
+toml = "0.8.19"
+toml_edit = "0.22.22"
