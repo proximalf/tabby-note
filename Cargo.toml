@@ -19,3 +19,7 @@ minijinja-contrib = { version = "2.5.0", features = ["datetime"] }
 serde = { version = "1.0.217", features = ["serde_derive"] }
 toml = "0.8.19"
 toml_edit = "0.22.22"
+
+[[bin]]
+name = "rust-output"
+path = "src/main.rs"
