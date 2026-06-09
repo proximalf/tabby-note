@@ -50,7 +50,7 @@ pub fn build_cli() -> clap::ArgMatches {
             Arg::new("write_config")
                 .action(ArgAction::SetTrue)
                 .long("config")
-                .help("Opens the newly created file for editing."),
+                .help("Opens the config file for editing."),
         )
         .get_matches();
     matches
